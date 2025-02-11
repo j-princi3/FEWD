@@ -1,0 +1,130 @@
+<!-- Problem-2
+Create a Portfolio page using HTML , it should contain 
+-> Self introduction
+-> skills 
+-> projects/work experiences (Git links)
+-> Feedback /achivements
+-> Education profile 
+-> Contact information.(Social media /phone /email)
+
+
+Note: once you create the poftfolio upload the page with neccesary document to Github account with public access
+<!DOCTYPE html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princi Jain - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Princi Jain - Portfolio</h1>
+        <p>Welcome to my personal portfolio website</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Self Introduction -->
+        <section id="intro">
+            <h2>Self Introduction</h2>
+            <p>Hello! I'm Princi Jain, a passionate web developer with a knack for creating beautiful and functional websites. I specialize in front-end development and enjoy solving problems with clean and efficient code. Welcome to my portfolio, where you can find my work and achievements.</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Vue.js</li>
+                <li>Node.js, Express.js</li>
+                <li>Python, Django</li>
+                <li>Version Control (Git/GitHub)</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+        <!-- Projects / Work Experiences -->
+        <section id="projects">
+            <h2>Projects / Work Experience</h2>
+            <p>Here are some of my recent projects and work experiences:</p>
+            <ul>
+                <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1 - Description</a></li>
+                <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2 - Description</a></li>
+                <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3 - Description</a></li>
+            </ul>
+        </section>
+
+        <!-- Feedback / Achievements -->
+        <section id="feedback">
+            <h2>Feedback & Achievements</h2>
+            <p>Here are some feedback from colleagues and clients:</p>
+            <blockquote>
+                "Great work on the project! Your attention to detail and innovative ideas were outstanding." – Dr Devika Rubi
+            </blockquote>
+            <p>Achievements:</p>
+            <ul>
+                <li>Winner of SriVity Hackathon 2022</li>
+                <li>Completed Web Development Bootcamp (2023)</li>
+            </ul>
+
+            <!-- Feedback Form -->
+            <h3>Leave Your Feedback</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Your Feedback:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <!-- Education Profile -->
+        <section id="education">
+            <h2>Education Profile</h2>
+            <p>I hold a degree in Computer Science from MIT. Here are some key details:</p>
+            <ul>
+                <li>Degree: B.Sc. in Computer Science</li>
+                <li>University: KMIT</li>
+                <li>Year of Graduation: 2026</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you'd like to get in touch, feel free to reach out to me:</p>
+            <ul>
+                <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>Phone: (123) 456-7890</li>
+            </ul>
+            <p>Follow me on social media:</p>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+
+            <!-- Contact Me Form -->
+            <h3>Contact Me</h3>
+            <form action="#" method="post">
+                <label for="contact-name">Your Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required><br><br>
+                
+                <label for="contact-email">Your Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required><br><br>
+                
+                <label for="contact-message">Your Message:</label><br>
+                <textarea id="contact-message" name="contact-message" rows="4" cols="50" required></textarea><br><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
