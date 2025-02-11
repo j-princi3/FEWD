@@ -1,0 +1,158 @@
+<!-- display info in table
+first col is serial number (dynamic)
+second col is name of student (static)
+third col is image
+fourth col is button , which asks to upload cv when clicked
+once cv is uploaded
+below the button display name of file
+5th col is link which redirects to the project details of the student in diff web page -->
+
+
+<!-- Create a Navigation bar using HTML (With out CSS and Bootstarp), it should contain 
+-> Home
+-> Signup
+-> Login
+-> Search Bar.
+
+Note: once you create web page upload the page to Github account with public access -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .upload-btn {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .file-name {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .project-link {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Information</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Serial Number</th>
+            <th>Student Name</th>
+            <th>Image</th>
+            <th>Upload CV</th>
+            <th>Project Details</th>
+        </tr>
+    </thead>
+    <tbody id="studentTableBody">
+        <!-- Dynamic rows will be inserted here by JavaScript -->
+    </tbody>
+</table>
+
+<script>
+    // Sample data for students (You can add more students as required)
+    const students = [
+        { name: "shreya", image: "https://via.placeholder.com/50", projectLink: "https://example.com/project1" },
+        { name: "saanvi", image: "https://via.placeholder.com/50", projectLink: "https://example.com/project2" },
+        { name: "vibha", image: "https://via.placeholder.com/50", projectLink: "https://example.com/project3" }
+    ];
+
+    // Function to render table rows
+    function renderStudentTable() {
+        const tableBody = document.getElementById("studentTableBody");
+
+        students.forEach((student, index) => {
+            const row = document.createElement("tr");
+
+            // Serial number column (dynamic)
+            const serialCell = document.createElement("td");
+            serialCell.textContent = index + 1;
+            row.appendChild(serialCell);
+
+            // Student name column (static)
+            const nameCell = document.createElement("td");
+            nameCell.textContent = student.name;
+            row.appendChild(nameCell);
+
+
+            const imageCell = document.createElement("td");
+            const image = document.createElement("img");
+            image.src = student.image;
+            image.alt = student.name;
+            image.style.width = "50px";  // Set the image size
+            image.style.height = "50px"; // Set the image size
+            imageCell.appendChild(image);
+            row.appendChild(imageCell);
+
+            const uploadCell = document.createElement("td");
+            const uploadButton = document.createElement("button");
+            uploadButton.textContent = "Upload CV";
+            uploadButton.classList.add("upload-btn");
+
+            const fileNameDisplay = document.createElement("div");
+            fileNameDisplay.classList.add("file-name");
+
+            const inputFile = document.createElement("input");
+            inputFile.type = "file";
+            inputFile.accept = ".pdf";  // Accept only PDF files
+
+            inputFile.addEventListener("change", (event) => {
+                const fileName = event.target.files[0] ? event.target.files[0].name : "No file selected";
+                fileNameDisplay.textContent = `File: ${fileName}`;
+            });
+
+            uploadCell.appendChild(inputFile);
+            uploadCell.appendChild(uploadButton);
+            uploadCell.appendChild(fileNameDisplay);
+            row.appendChild(uploadCell);
+
+            // Project details link
+            const projectLinkCell = document.createElement("td");
+            const projectLink = document.createElement("a");
+            projectLink.href = student.projectLink;
+            projectLink.target = "_blank";
+            projectLink.textContent = "View Project";
+            projectLink.classList.add("project-link");
+            projectLinkCell.appendChild(projectLink);
+            row.appendChild(projectLinkCell);
+
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Initial render of the table
+    renderStudentTable();
+</script>
+
+</body>
+</html>

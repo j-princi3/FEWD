@@ -1,0 +1,151 @@
+<!-- Problem-2
+Create a Portfolio page using HTML , it should contain 
+-> Self introduction
+-> skills 
+-> projects/work experiences (Git links)
+-> Feedback /achivements
+-> Education profile 
+-> Contact information.(Social media /phone /email)
+
+
+Note: once you create the poftfolio upload the page with neccesary document to Github account with public access
+<!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background-color: #ddd;
+            margin-bottom: 5px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name - Portfolio</h1>
+        <p>Welcome to my personal portfolio website</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Self Introduction -->
+        <section id="intro">
+            <h2>Self Introduction</h2>
+            <p>Hello! I'm [Your Name], a passionate web developer with a knack for creating beautiful and functional websites. I specialize in front-end development and enjoy solving problems with clean and efficient code. Welcome to my portfolio, where you can find my work and achievements.</p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js, Vue.js</li>
+                    <li>Node.js, Express.js</li>
+                    <li>Python, Django</li>
+                    <li>Version Control (Git/GitHub)</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects / Work Experiences -->
+        <section id="projects">
+            <h2>Projects / Work Experience</h2>
+            <p>Here are some of my recent projects and work experiences:</p>
+            <ul>
+                <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1 - Description</a></li>
+                <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2 - Description</a></li>
+                <li><a href="https://github.com/yourusername/project3" target="_blank">Project 3 - Description</a></li>
+            </ul>
+        </section>
+
+        <!-- Feedback / Achievements -->
+        <section id="feedback">
+            <h2>Feedback & Achievements</h2>
+            <p>Here are some feedback from colleagues and clients:</p>
+            <blockquote>
+                "Great work on the project! Your attention to detail and innovative ideas were outstanding." – Client Name
+            </blockquote>
+            <p>Achievements:</p>
+            <ul>
+                <li>Winner of XYZ Hackathon 2024</li>
+                <li>Completed Web Development Bootcamp (2023)</li>
+            </ul>
+        </section>
+
+        <!-- Education Profile -->
+        <section id="education">
+            <h2>Education Profile</h2>
+            <p>I hold a degree in Computer Science from [University Name]. Here are some key details:</p>
+            <ul>
+                <li>Degree: B.Sc. in Computer Science</li>
+                <li>University: [University Name]</li>
+                <li>Year of Graduation: 2023</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you'd like to get in touch, feel free to reach out to me:</p>
+            <div class="contact-info">
+                <ul>
+                    <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li>Phone: (123) 456-7890</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <p>Follow me on social media:</p>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
