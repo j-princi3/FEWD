@@ -1,0 +1,180 @@
+<!-- Problem-2
+update a Portfolio page using internal CSS , it should contain 
+-> Self introduction
+-> skills 
+-> projects/work experiences (Git links)
+-> Feedback /achivements
+-> Education profile 
+-> Contact information.(Social media /phone /email)
+
+Note: add Internal CSS
+
+Note: once you update the poftfolio page upload the page with neccesary documents to Github account with public access -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princi Jain - Portfolio</title>
+    <link rel="stylesheet" href="stylesPortfolio.css">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #555;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        } */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Princi Jain - Portfolio</h1>
+        <p>Welcome to my personal portfolio website</p>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Self Introduction</h2>
+            <p>Hello! I'm Princi Jain, a passionate web developer with a knack for creating beautiful and functional websites.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Vue.js</li>
+                <li>Node.js, Express.js</li>
+                <li>Python, Django</li>
+                <li>Version Control (Git/GitHub)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects / Work Experience</h2>
+            <ul>
+                <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
+                <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
+            </ul>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback & Achievements</h2>
+            <blockquote>"Great work on the project!"</blockquote>
+            <ul>
+                <li>Winner of SriVity Hackathon 2022</li>
+            </ul>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Your Feedback:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section id="education">
+            <h2>Education Profile</h2>
+            <ul>
+                <li>B.Sc. in Computer Science, KMIT (2026)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>Phone: (123) 456-7890</li>
+            </ul>
+            <p>Follow me on social media:</p>
+            <a href="https://www.linkedin.com/in/yourusername">LinkedIn</a> |
+            <a href="https://github.com/yourusername">GitHub</a>
+        </section>
+    </div>
+</body>
+</html>
