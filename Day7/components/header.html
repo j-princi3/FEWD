@@ -1,0 +1,54 @@
+<!-- Header and Navbar Component -->
+<header class="bg-dark text-light text-center py-4">
+    <div class="container">
+        <h1 class="display-4 fw-bold">ShopEase</h1>
+        <p class="lead">Your One-Stop Shopping Destination</p>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-bag-heart-fill me-2"></i>ShopEase
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" id="nav-about">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="products.html" id="nav-products" >
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="nav-products">
+                        <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                        <li><a class="dropdown-item" href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a class="dropdown-item" href="best-sellers.html">Best Sellers</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html" id="nav-gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="partners.html" id="nav-partners">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="nav-contact">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="bi bi-person-fill me-1"></i>Login
+            </button>
+        </div>
+    </div>
+</nav>

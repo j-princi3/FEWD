@@ -5,56 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopEase - Partners</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-4">
-    <div class="container">
-      <h1>ShopEase</h1>
-      <p class="lead">Your One-Stop Shopping Destination</p>
-    </div>
-  </header>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ShopEase</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="partners.html">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-      </div>
-    </div>
-  </nav>
+  <!-- Header and Navbar will be loaded here -->
+  <div id="header-container"></div>
 
   <!-- Main Content -->
-  <main>
+  <main class="fade-in">
     <!-- Partners Header -->
     <section class="py-5 bg-light">
       <div class="container text-center">
-        <h2 class="display-4">Our Partners</h2>
+        <h2 class="display-4 fw-bold">Our Partners</h2>
         <p class="lead">We collaborate with industry leaders to bring you the best products and services</p>
       </div>
     </section>
@@ -62,37 +25,48 @@
     <!-- Featured Partners -->
     <section class="py-5">
       <div class="container">
-        <h3 class="text-center mb-5">Featured Partners</h3>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Featured Partners</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Partner Logo">
+            <div class="card h-100 shadow-sm featured-item">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Partner Logo">
               <div class="card-body text-center">
                 <h4 class="card-title">TechVision</h4>
                 <p class="card-text">Leading provider of cutting-edge electronics and smart devices. Our partnership brings you the latest technology at competitive prices.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-arrow-right-circle me-2"></i>Learn More
+                </a>
               </div>
             </div>
           </div>
           
           <div class="col-md-4 mb-4">
             <div class="card h-100 shadow-sm">
-              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Partner Logo">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Partner Logo">
               <div class="card-body text-center">
                 <h4 class="card-title">StyleHub</h4>
                 <p class="card-text">Premium fashion brand known for quality and trendsetting designs. Our collaboration brings exclusive collections to our customers.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-arrow-right-circle me-2"></i>Learn More
+                </a>
               </div>
             </div>
           </div>
           
           <div class="col-md-4 mb-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://via.placeholder.com/300x150" class="card-img-top" alt="Partner Logo">
+            <div class="card h-100 shadow-sm featured-item">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Partner Logo">
               <div class="card-body text-center">
                 <h4 class="card-title">HomeComfort</h4>
                 <p class="card-text">Specialists in home and kitchen products designed for modern living. Together, we offer innovative solutions for your home.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-arrow-right-circle me-2"></i>Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -103,15 +77,20 @@
     <!-- Partner Categories -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h3 class="text-center mb-5">Our Partner Network</h3>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Partner Network</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
         
         <!-- Technology Partners -->
         <div class="mb-5">
-          <h4 class="border-bottom pb-2 mb-4">Technology Partners</h4>
+          <h4 class="border-bottom border-primary pb-2 mb-4">Technology Partners</h4>
           <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">ElectroTech</h6>
                 </div>
@@ -119,7 +98,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">SmartLife</h6>
                 </div>
@@ -127,7 +106,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">InnovateTech</h6>
                 </div>
@@ -135,7 +114,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">FutureTech</h6>
                 </div>
@@ -143,7 +122,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">DigiWorld</h6>
                 </div>
@@ -151,7 +130,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Tech Partner">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Tech Partner">
                 <div class="card-body">
                   <h6 class="card-title">TechPro</h6>
                 </div>
@@ -162,11 +141,11 @@
         
         <!-- Fashion Partners -->
         <div class="mb-5">
-          <h4 class="border-bottom pb-2 mb-4">Fashion Partners</h4>
+          <h4 class="border-bottom border-primary pb-2 mb-4">Fashion Partners</h4>
           <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Fashion Partner">
+                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Fashion Partner">
                 <div class="card-body">
                   <h6 class="card-title">ElegantWear</h6>
                 </div>
@@ -174,7 +153,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Fashion Partner">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Fashion Partner">
                 <div class="card-body">
                   <h6 class="card-title">TrendyStyles</h6>
                 </div>
@@ -182,7 +161,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Fashion Partner">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Fashion Partner">
                 <div class="card-body">
                   <h6 class="card-title">UrbanChic</h6>
                 </div>
@@ -190,7 +169,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Fashion Partner">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Fashion Partner">
                 <div class="card-body">
                   <h6 class="card-title">FashionForward</h6>
                 </div>
@@ -198,7 +177,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Fashion Partner">
+                <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Fashion Partner">
                 <div class="card-body">
                   <h6 class="card-title">StyleMasters</h6>
                 </div>
@@ -209,11 +188,11 @@
         
         <!-- Home & Kitchen Partners -->
         <div>
-          <h4 class="border-bottom pb-2 mb-4">Home & Kitchen Partners</h4>
+          <h4 class="border-bottom border-primary pb-2 mb-4">Home & Kitchen Partners</h4>
           <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1556911220-bda9f7f7597b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">CozyHome</h6>
                 </div>
@@ -221,7 +200,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1556909114-44e3e9399e2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">KitchenPro</h6>
                 </div>
@@ -229,7 +208,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">HomeEssentials</h6>
                 </div>
@@ -237,7 +216,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">ModernLiving</h6>
                 </div>
@@ -245,7 +224,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">ComfortZone</h6>
                 </div>
@@ -253,7 +232,7 @@
             </div>
             <div class="col text-center">
               <div class="card h-100 border-0 bg-transparent">
-                <img src="https://via.placeholder.com/150" class="card-img-top mx-auto" style="max-width: 120px;" alt="Home Partner">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top mx-auto rounded-circle" style="max-width: 120px;" alt="Home Partner">
                 <div class="card-body">
                   <h6 class="card-title">DreamHome</h6>
                 </div>
@@ -269,8 +248,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <h3>Partner With Us</h3>
-            <p class="lead">Join our growing network of partners and expand your business reach</p>
+            <h3 class="fw-bold mb-4">Partner With Us</h3>
+            <p class="lead text-primary mb-3">Join our growing network of partners and expand your business reach</p>
             <p>At ShopEase, we believe in the power of collaboration. By partnering with us, you gain access to our extensive customer base and benefit from our established e-commerce platform.</p>
             
             <div class="d-flex align-items-start mb-3">
@@ -313,11 +292,13 @@
               </div>
             </div>
             
-            <a href="contact.html" class="btn btn-primary mt-3">Become a Partner</a>
+            <a href="contact.html" class="btn btn-primary mt-3">
+              <i class="bi bi-handshake me-2"></i>Become a Partner
+            </a>
           </div>
           
           <div class="col-lg-6">
-            <img src="https://via.placeholder.com/600x400" alt="Partnership" class="img-fluid rounded shadow">
+            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Partnership" class="img-fluid rounded shadow">
           </div>
         </div>
       </div>
@@ -326,7 +307,12 @@
     <!-- Testimonials -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h3 class="text-center mb-5">What Our Partners Say</h3>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Partners Say</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
@@ -340,7 +326,7 @@
                 </div>
                 <p class="card-text">"Partnering with ShopEase has been a game-changer for our business. Their platform has significantly increased our product visibility and sales. The team is professional and supportive."</p>
                 <div class="d-flex align-items-center mt-4">
-                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Partner">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Partner">
                   <div>
                     <h6 class="mb-0">John Smith</h6>
                     <small class="text-muted">CEO, TechVision</small>
@@ -362,7 +348,7 @@
                 </div>
                 <p class="card-text">"The marketing support we've received from ShopEase has been exceptional. Our brand recognition has improved, and we've seen a steady increase in customer engagement since joining their partner network."</p>
                 <div class="d-flex align-items-center mt-4">
-                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Partner">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Partner">
                   <div>
                     <h6 class="mb-0">Emily Johnson</h6>
                     <small class="text-muted">Marketing Director, StyleHub</small>
@@ -384,7 +370,7 @@
                 </div>
                 <p class="card-text">"As a small business, we were looking for ways to expand our reach. ShopEase provided the perfect platform for us to showcase our products to a wider audience. The partnership has been invaluable."</p>
                 <div class="d-flex align-items-center mt-4">
-                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="Partner">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Partner">
                   <div>
                     <h6 class="mb-0">Michael Brown</h6>
                     <small class="text-muted">Founder, HomeComfort</small>
@@ -398,75 +384,16 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <h5>ShopEase</h5>
-          <p>Your one-stop shopping destination for all your needs.</p>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white">Home</a></li>
-            <li><a href="about.html" class="text-white">About Us</a></li>
-            <li><a href="products.html" class="text-white">Products</a></li>
-            <li><a href="contact.html" class="text-white">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5>Contact Us</h5>
-          <address>
-            123 Shopping Street<br>
-            Retail City, RC 12345<br>
-            <a href="tel:+1234567890" class="text-white">Phone: (123) 456-7890</a><br>
-            <a href="mailto:info@shopease.com" class="text-white">Email: info@shopease.com</a>
-          </address>
-        </div>
-      </div>
-      <hr>
-      <div class="text-center">
-        <p>&copy; 2023 ShopEase. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer will be loaded here -->
+  <div id="footer-container"></div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" required>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="rememberMe">
-              <label class="form-check-label" for="rememberMe">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
-          </form>
-          <div class="text-center mt-3">
-            <a href="#" class="text-decoration-none">Forgot password?</a>
-            <p class="mt-2">Don't have an account? <a href="#" class="text-decoration-none">Register</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Login Modal will be loaded here -->
+  <div id="modal-container"></div>
 
   <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
 

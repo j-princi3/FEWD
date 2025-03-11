@@ -5,64 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopEase - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-4">
-    <div class="container">
-      <h1>ShopEase</h1>
-      <p class="lead">Your One-Stop Shopping Destination</p>
-    </div>
-  </header>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">ShopEase</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="partners.html">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-      </div>
-    </div>
-  </nav>
+  <!-- Header and Navbar will be loaded here -->
+  <div id="header-container"></div>
 
   <!-- Main Content -->
-  <main>
+  <main class="fade-in">
     <!-- Hero Section -->
-    <section class="hero-section py-5">
+    <section class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h2 class="display-4">Welcome to ShopEase</h2>
-            <p class="lead">Discover amazing products at unbeatable prices.</p>
-            <p>We offer a wide range of high-quality products to meet all your needs. From electronics to fashion, home decor to beauty products, we've got you covered.</p>
-            <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+            <h2 class="display-4 fw-bold mb-3">Welcome to ShopEase</h2>
+            <p class="lead text-primary mb-3">Discover amazing products at unbeatable prices.</p>
+            <p class="mb-4">We offer a wide range of high-quality products to meet all your needs. From electronics to fashion, home decor to beauty products, we've got you covered.</p>
+            <div class="d-flex gap-3">
+              <a href="products.html" class="btn btn-primary btn-lg">
+                <i class="bi bi-cart-fill me-2"></i>Shop Now
+              </a>
+              <a href="about.html" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-info-circle-fill me-2"></i>Learn More
+              </a>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <img src="https://via.placeholder.com/600x400" alt="Shopping" class="img-fluid rounded">
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Shopping" class="img-fluid rounded shadow">
           </div>
         </div>
       </div>
@@ -71,104 +41,200 @@
     <!-- Featured Products -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Featured Products</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+            <div class="card h-100 featured-item">
+              <div class="badge bg-primary position-absolute" style="top: 10px; right: 10px;">New</div>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1399&q=80" class="card-img-top" alt="Smart Watch">
               <div class="card-body">
                 <h5 class="card-title">Smart Watch</h5>
                 <p class="card-text">Track your fitness goals with our latest smart watch. Features include heart rate monitoring, step counter, and more.</p>
-                <p class="text-primary fw-bold">$199.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="text-primary fw-bold mb-0">$199.99</p>
+                  <a href="#" class="btn btn-primary">
+                    <i class="bi bi-cart-plus me-1"></i>Add to Cart
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
-              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
+              <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" class="card-img-top" alt="Wireless Earbuds">
               <div class="card-body">
                 <h5 class="card-title">Wireless Earbuds</h5>
                 <p class="card-text">Experience crystal clear sound with our wireless earbuds. Perfect for workouts and daily commutes.</p>
-                <p class="text-primary fw-bold">$89.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="text-primary fw-bold mb-0">$89.99</p>
+                  <a href="#" class="btn btn-primary">
+                    <i class="bi bi-cart-plus me-1"></i>Add to Cart
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+            <div class="card h-100 featured-item">
+              <div class="badge bg-danger position-absolute" style="top: 10px; right: 10px;">Sale</div>
+              <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" class="card-img-top" alt="Bluetooth Speaker">
               <div class="card-body">
                 <h5 class="card-title">Portable Charger</h5>
                 <p class="card-text">Never run out of battery again with our high-capacity portable charger. Charges multiple devices simultaneously.</p>
-                <p class="text-primary fw-bold">$49.99</p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="text-muted text-decoration-line-through">$59.99</span>
+                    <span class="text-primary fw-bold ms-2">$49.99</span>
+                  </div>
+                  <a href="#" class="btn btn-primary">
+                    <i class="bi bi-cart-plus me-1"></i>Add to Cart
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="text-center mt-4">
-          <a href="products.html" class="btn btn-outline-primary">View All Products</a>
+          <a href="products.html" class="btn btn-outline-primary">
+            <i class="bi bi-grid-3x3-gap me-2"></i>View All Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Shop by Category</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <a href="products.html" class="text-decoration-none">
+              <div class="card text-center h-100">
+                <div class="card-body py-4">
+                  <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                  <h5 class="card-title">Electronics</h5>
+                  <p class="card-text text-muted">Latest gadgets and devices</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="products.html" class="text-decoration-none">
+              <div class="card text-center h-100">
+                <div class="card-body py-4">
+                  <i class="bi bi-handbag fs-1 text-primary mb-3"></i>
+                  <h5 class="card-title">Fashion</h5>
+                  <p class="card-text text-muted">Trendy clothing and accessories</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="products.html" class="text-decoration-none">
+              <div class="card text-center h-100">
+                <div class="card-body py-4">
+                  <i class="bi bi-house-heart fs-1 text-primary mb-3"></i>
+                  <h5 class="card-title">Home & Kitchen</h5>
+                  <p class="card-text text-muted">Essentials for modern living</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="products.html" class="text-decoration-none">
+              <div class="card text-center h-100">
+                <div class="card-body py-4">
+                  <i class="bi bi-droplet fs-1 text-primary mb-3"></i>
+                  <h5 class="card-title">Beauty</h5>
+                  <p class="card-text text-muted">Skincare and cosmetics</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">What Our Customers Say</h2>
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Customers Say</h2>
+          <div class="d-flex justify-content-center">
+            <div class="border-bottom border-primary" style="width: 50px;"></div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body">
-                <div class="d-flex justify-content-center mb-3">
-                  <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Customer 1">
-                </div>
-                <h5 class="card-title text-center">John Doe</h5>
-                <div class="text-center text-warning mb-3">
+                <div class="text-warning mb-3">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <p class="card-text text-center">"I've been shopping with ShopEase for over a year now, and I'm always impressed with their product quality and customer service."</p>
+                <p class="card-text">"I've been shopping with ShopEase for over a year now, and I'm always impressed with their product quality and customer service."</p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Customer 1">
+                  <div>
+                    <h6 class="mb-0">John Doe</h6>
+                    <small class="text-muted">Loyal Customer</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body">
-                <div class="d-flex justify-content-center mb-3">
-                  <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Customer 2">
-                </div>
-                <h5 class="card-title text-center">Jane Smith</h5>
-                <div class="text-center text-warning mb-3">
+                <div class="text-warning mb-3">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-half"></i>
                 </div>
-                <p class="card-text text-center">"Fast shipping and great prices! The smart watch I purchased exceeded my expectations. Will definitely shop here again."</p>
+                <p class="card-text">"Fast shipping and great prices! The smart watch I purchased exceeded my expectations. Will definitely shop here again."</p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Customer 2">
+                  <div>
+                    <h6 class="mb-0">Jane Smith</h6>
+                    <small class="text-muted">New Customer</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="card h-100">
               <div class="card-body">
-                <div class="d-flex justify-content-center mb-3">
-                  <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Customer 3">
-                </div>
-                <h5 class="card-title text-center">Mike Johnson</h5>
-                <div class="text-center text-warning mb-3">
+                <div class="text-warning mb-3">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </div>
-                <p class="card-text text-center">"The customer support team went above and beyond to help me with my order. I'm a customer for life!"</p>
+                <p class="card-text">"The customer support team went above and beyond to help me with my order. I'm a customer for life!"</p>
+                <div class="d-flex align-items-center mt-4">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="rounded-circle me-3" width="50" height="50" alt="Customer 3">
+                  <div>
+                    <h6 class="mb-0">Mike Johnson</h6>
+                    <small class="text-muted">Regular Customer</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -177,75 +243,16 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <h5>ShopEase</h5>
-          <p>Your one-stop shopping destination for all your needs.</p>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white">Home</a></li>
-            <li><a href="about.html" class="text-white">About Us</a></li>
-            <li><a href="products.html" class="text-white">Products</a></li>
-            <li><a href="contact.html" class="text-white">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5>Contact Us</h5>
-          <address>
-            123 Shopping Street<br>
-            Retail City, RC 12345<br>
-            <a href="tel:+1234567890" class="text-white">Phone: (123) 456-7890</a><br>
-            <a href="mailto:info@shopease.com" class="text-white">Email: info@shopease.com</a>
-          </address>
-        </div>
-      </div>
-      <hr>
-      <div class="text-center">
-        <p>&copy; 2023 ShopEase. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer will be loaded here -->
+  <div id="footer-container"></div>
 
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" required>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="rememberMe">
-              <label class="form-check-label" for="rememberMe">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
-          </form>
-          <div class="text-center mt-3">
-            <a href="#" class="text-decoration-none">Forgot password?</a>
-            <p class="mt-2">Don't have an account? <a href="#" class="text-decoration-none">Register</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Login Modal will be loaded here -->
+  <div id="modal-container"></div>
 
   <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
 

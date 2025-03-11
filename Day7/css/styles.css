@@ -1,0 +1,177 @@
+/* Custom Styles for ShopEase E-commerce Website */
+
+/* General Styles */
+:root {
+  --primary: #000000; /* Black */
+  --primary-hover: #333333; /* Dark Gray */
+  --secondary: #666666; /* Gray */
+  --light: #f8f9fa; /* Light Gray */
+  --dark: #212529; /* Dark Gray */
+  --card-bg: #ffffff; /* White */
+  --card-border: #dee2e6; /* Light Gray Border */
+  --text-dark: #212529; /* Dark Gray */
+  --text-muted: #6c757d; /* Muted Gray */
+  --success: #198754; /* Green */
+  --danger: #dc3545; /* Red */
+  --warning: #ffc107; /* Yellow */
+  --info: #0dcaf0; /* Cyan */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--light);
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Form Styles */
+.form-control {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+  color: var(--text-dark);
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* Section Backgrounds */
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+  cursor: pointer;
+}
+
+.gallery-item img {
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+}
+
+/* Accordion Styles */
+.accordion-item {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+.accordion-button {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7e7e7;
+  color: #333333;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Glow effect for featured items */
+.featured-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  animation: rotate 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+}
