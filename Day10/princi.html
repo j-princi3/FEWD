@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Commerce</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">E-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="http://10.10.6.72:5500/Day10/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://10.10.6.72:5500/Day10/about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://10.10.6.72:5500/Day10/products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://10.10.6.72:5500/Day10/partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://10.10.6.72:5500/Day10/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Header -->
+    <header class="text-center my-4">
+        <h1>Welcome to E-Shop!</h1>
+    </header>
+
+    <!-- About Us Page -->
+    <div class="container my-4">
+        <h2>Our Story</h2>
+        <p>We are a family-owned business</p>
+    </div>
+
+    <!-- Products Page -->
+    <div class="container my-4">
+        <h2>Products</h2>
+        <div class="row">
+            <div class="col-md-4 category-card">Electronics</div>
+            <div class="col-md-4 category-card">Clothing</div>
+            <div class="col-md-4 category-card">Home Appliances</div>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div class="container my-4">
+        <h2>Gallery</h2>
+        <img src="../ScreenShots/Screenshot From 2025-02-11 10-58-25.png" class="img-fluid" alt="Gallery Image 1">
+    </div>
+
+    <!-- Contact Us Page -->
+    <div class="container my-4">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 E-Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
