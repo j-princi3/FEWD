@@ -1,0 +1,116 @@
+:root {
+  /* Font and base settings */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color scheme toggles between light and dark automatically */
+  color-scheme: light dark;
+
+  /* Dark theme colors (default) */
+  --bg-color: #1e1e2f;
+  --text-color: #e0e0e0;
+  --primary-color: #7f5af0;
+  --primary-hover: #6247ea;
+  --muted-color: #a0a0a0;
+  --card-bg: #2a2a3d;
+  --input-bg: #2a2a3d;
+  --input-border: #3a3a4d;
+  --button-bg: #7f5af0;
+  --button-text: #ffffff;
+  --button-hover-bg: #6247ea;
+}
+
+/* Light theme overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f5f7ff;
+    --text-color: #212121;
+    --primary-color: #635fc7;
+    --primary-hover: #4e3fcf;
+    --muted-color: #606060;
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #d1d1e0;
+    --button-bg: #635fc7;
+    --button-text: #ffffff;
+    --button-hover-bg: #4e3fcf;
+  }
+}
+
+/* Global body */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  margin: 0 0 1rem;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Form elements */
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(127, 90, 240, 0.2);
+}
+
+/* Card container for forms */
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Utility */
+.text-center { text-align: center; }
